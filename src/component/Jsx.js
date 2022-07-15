@@ -7,12 +7,13 @@ const Jsx = (props) => {
  /*const contador = useState(13)
  const contadorValue = contador[0]
  const updateContador  = contador[1] */ 
- 
- setInterval(()=>{
-    updateContador(contadorValue+1)
- },2000)
+ const tocar = ()=>{updateContador(contadorValue+12)}
 
- return  <h1>{contadorValue}</h1>
+ return(
+ <div>
+ <h1>{contadorValue}</h1>
+ <button onClick={tocar}>subir12</button>
+ </div>)
 }
  
 
